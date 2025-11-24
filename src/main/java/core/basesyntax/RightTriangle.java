@@ -11,6 +11,7 @@ public class RightTriangle extends Figure {
         this.firstLeg = firstLeg;
         this.secondLeg = secondLeg;
     }
+
     @Override
     public double getArea() {
         return (firstLeg * secondLeg) / 2;
