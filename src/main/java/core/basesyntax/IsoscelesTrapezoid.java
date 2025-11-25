@@ -2,7 +2,7 @@ package core.basesyntax;
 
 import java.util.Locale;
 
-public class IsoscelesTrapezoid extends Figure {
+public class IsoscelesTrapezoid extends Figure implements Area {
     private int base1;
     private int base2;
     private int height;

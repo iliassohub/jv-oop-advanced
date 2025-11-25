@@ -2,7 +2,7 @@ package core.basesyntax;
 
 import java.util.Locale;
 
-public class RightTriangle extends Figure {
+public class RightTriangle extends Figure implements Area {
     private int firstLeg;
     private int secondLeg;
 

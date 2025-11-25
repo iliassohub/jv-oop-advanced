@@ -7,8 +7,8 @@ public abstract class Figure {
         this.color = color;
     }
 
-    public abstract double getArea();
+    /* public abstract double getArea(); */
 
-    public abstract void draw();
+   public abstract void draw();
 
 }
