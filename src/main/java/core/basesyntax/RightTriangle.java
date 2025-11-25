@@ -20,6 +20,11 @@ public class RightTriangle extends Figure implements Area {
     @Override
     public void draw() {
         String area = String.format(Locale.US, "%.1f", getArea());
-        System.out.println("Figure: right triangle, " + "area: " + area + " sq. units, " + "first leg: " + firstLeg + " units" + ", second leg: " + secondLeg + " units," + " color: " + color);
+        System.out.println(
+                String.format(
+                        "Figure: right triangle, area: %s sq. units, firstLeg: %s units, secondLeg: %s units, color: %s",
+                        area, firstLeg, secondLeg, color
+                )
+        );
     }
 }

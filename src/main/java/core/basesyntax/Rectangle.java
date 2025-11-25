@@ -1,5 +1,7 @@
 package core.basesyntax;
 
+import java.util.Locale;
+
 public class Rectangle extends Figure implements Area {
     private int width;
     private int height;
@@ -17,6 +19,12 @@ public class Rectangle extends Figure implements Area {
 
     @Override
     public void draw() {
-        System.out.println("Figure: rectangle, " + "area: " + getArea() + " sq. units, " + "width: " + width + " units" + ", height: " + height + " units," + " color: " + color);
+        String area = String.format(Locale.US, "%.1f", getArea());
+        System.out.println(
+                String.format(
+                        "Figure: rectangle, area: %s sq. units, width: %s units, height: %s units, color: %s",
+                        area, width, height, color
+                )
+        );
     }
 }

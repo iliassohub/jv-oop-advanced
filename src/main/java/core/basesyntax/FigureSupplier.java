@@ -27,12 +27,10 @@ public class FigureSupplier {
             case 4:
                 return new IsoscelesTrapezoid(color, random.nextInt(RANGE) + DOWN_RANGE, random.nextInt(RANGE) + DOWN_RANGE, random.nextInt(RANGE) + DOWN_RANGE);
         }
-
         return getDefaultFigure();
     }
 
     public Figure getDefaultFigure() {
         return new Circle(DEFAULT_COLOR, DEFAULT_SIZE);
-
     }
 }

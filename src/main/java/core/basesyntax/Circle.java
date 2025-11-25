@@ -10,7 +10,6 @@ public class Circle extends Figure implements Area {
         this.radius = radius;
     }
 
-
     @Override
     public double getArea() {
         return Math.PI * (radius * radius);
@@ -19,6 +18,11 @@ public class Circle extends Figure implements Area {
     @Override
     public void draw() {
         String area = String.format(Locale.US, "%.1f", getArea());
-        System.out.println("Figure: circle, " + "area: " + area + " sq. units, " + "radius: " + radius + " units, " + "color: " + color);
+        System.out.println(
+                String.format(
+                        "Figure: circle, area: %s sq. units, radius: %s units, color: %s",
+                        area, radius, color
+                )
+        );
     }
 }

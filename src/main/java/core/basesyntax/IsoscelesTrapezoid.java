@@ -22,6 +22,11 @@ public class IsoscelesTrapezoid extends Figure implements Area {
     @Override
     public void draw() {
         String area = String.format(Locale.US, "%.1f", getArea());
-        System.out.println("Figure: isosceles trapezoid, " + "area: " + area + " sq. units, " + "base 1: " + base1 + " units," + " base 2: " + base2 + " units," + " height: " + height + " units," + " color: " + color);
+        System.out.println(
+                String.format(
+                        "Figure: isosceles trapezoid, area: %s sq. units, base1: %s units, base2: %s units, height: %s units, color: %s",
+                        area, base1, base2, height, color
+                )
+        );
     }
 }
