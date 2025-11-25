@@ -4,6 +4,10 @@ import java.util.Random;
 
 public class FigureSupplier {
 
+     public static final String DEFAULT_COLOR = "white";
+     public static final int DEFAULT_SIZE = 10;
+
+
     public Figure getRandomFigure() {
         ColorSupplier randomColor = new ColorSupplier();
         String color = randomColor.getRandomColor();
@@ -27,7 +31,7 @@ public class FigureSupplier {
     }
 
     public Figure getDefaultFigure() {
-        return new Circle("white", 10);
+        return new Circle(DEFAULT_COLOR, DEFAULT_SIZE);
 
     }
 }
